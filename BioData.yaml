@@ -1,0 +1,47 @@
+# pubspec.yaml
+
+name: personal_biodata_portfolio
+description: A responsive personal biodata and portfolio application built with Flutter.
+publish_to: 'none' # Mencegah publikasi ke pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Dependensi Wajib untuk fungsionalitas utama:
+  url_launcher: ^6.2.2 # Untuk membuka tautan sosial dan email/CV.
+  
+  # Dependensi Opsional (Disarankan untuk fitur lengkap):
+  # google_fonts: ^6.1.0 # Font kustom untuk estetika yang lebih baik.
+  # animations: ^2.0.8    # Untuk transisi UI yang halus (SharedAxis/Fade/Scale).
+  # flutter_staggered_grid_view: ^0.7.0 # Opsional, untuk tampilan galeri yang lebih dinamis.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# -------------------------------------------------------------
+# KONFIGURASI ASET (Untuk Font & Gambar jika menggunakan lokal)
+# -------------------------------------------------------------
+flutter:
+  uses-material-design: true
+
+  # Untuk menggunakan google_fonts, Anda tidak perlu menambahkan font lokal.
+  # Jika Anda memutuskan untuk menggunakan aset font lokal:
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+
+  # Untuk menggunakan aset gambar lokal (jika tidak menggunakan URL):
+  # assets:
+  #   - assets/images/profile.jpg
+  #   - assets/images/gallery/
